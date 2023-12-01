@@ -144,4 +144,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 if 'DJANGO_DEBUG_FALSE' in os.environ:
-    CSRF_TRUSTED_ORIGINS = "https://" + ALLOWED_HOSTS
+    CSRF_TRUSTED_ORIGINS = "https://" + ALLOWED_HOSTS[0]
